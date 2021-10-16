@@ -1,10 +1,10 @@
-const gameUHD = [
-    {name: 'Far Cry 6', year: '2021', 
+let gameUHD = [
+    {name: 'Far Cry 6', year: '2021', genre: 'action', 
             video: ['zGMzdiVq7lE', 'Z6d5a3IDKqE', 'Gw2HhTmmzjU', 'VxSNPe6-mts', 
                     'wZhsduP4CHM', '43lEGhlYEdI', 'fN4ZmUqyDvA']},
-    {name: 'Survarium', year: '2021', video: ['uRQwR0TlLaI',]},
-    {name: 'Call of Duty: Black Ops Cold War', year: '2020', video: ['Yv3Sfz-87Wk',]},
-    {name: '', year: '', video: []},
+    {name: 'Survarium', year: '2021', genre: 'online action', video: ['uRQwR0TlLaI',]},
+    {name: 'Call of Duty: Black Ops Cold War', year: '2020', genre: 'action', video: ['Yv3Sfz-87Wk',]},
+    {name: '', year: '', genre: '', video: []},
 ]
  
 // for (let i = 0; i < gameUHD.length; i++){
@@ -29,6 +29,8 @@ const gameUHD = [
 // }
 // console.log(filtArr);
 
-let resultOne = gameUHD.find(item => item.name === 'Far Cry 6')
-console.log(resultOne)
+// let resultOne = gameUHD.find(item => item.name === 'Far Cry 6')
+// console.log(resultOne)
+
+
 
