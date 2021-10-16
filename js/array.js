@@ -29,3 +29,6 @@ const gameUHD = [
 // }
 // console.log(filtArr);
 
+let resultOne = gameUHD.find(item => item.name === 'Far Cry 6')
+console.log(resultOne)
+
