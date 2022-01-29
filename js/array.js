@@ -102,3 +102,16 @@
 // doublePower([100, 150, 200, 220]) === [200, 300, 400, 440]
 // doublePower([45, 34, 56, 67]) === [90, 68, 112, 134]
 // doublePower([]) === []
+// function doublePower(currentPowers) {
+//   let result = [];
+//   for (let i = 0; i < currentPowers.length; i++) {
+//     console.log(currentPowers[i]);
+//     if (currentPowers == "") {
+//       return result;
+//     }
+//     result.push(currentPowers[i] * 2);
+//     console.log(result);
+//   }
+//   return result;
+// }
+// doublePower([2, 6, 10]);
