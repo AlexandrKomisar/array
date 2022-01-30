@@ -178,3 +178,23 @@
 //   return result;
 // }
 // getLocation([0, 5], ["back", "back", "back", "right", "left", "forward"]);
+
+// 6
+// Ну що, коли всі процеси налаштовано, потрібно ставити перед собою правильні цілі. Наші роботи найкращі на ринку, тому потрібно нарощувати оберти і збільшувати обсяги виробництва.
+// Напиши функцію getPlan, яка поверне масив з цілями на задану кількість місяців numberOfMonths. Зараз ми виготовляємо startProduction роботів на місяць і хочемо, щоб щомісяця це число зростало на заданий відсоток percent.
+// Якщо кількість роботів буде не цілою, округли її вниз (Math.floor(value)). Ціль кожного наступного місяця розраховуй відносно попереднього.
+// Приклади:
+// getPlan(200, 3, 50) === [300, 450, 675]
+// getPlan(10, 4, 30) === [13, 16, 20, 26]
+// getPlan(1000, 6, 20) === [1200, 1440, 1728, 2073, 2487, 2984]
+// function getPlan(startProduction, numberOfMonths, percent) {
+//   let goals = [];
+//   let currentProduction = startProduction;
+//   for (let i = 0; i < numberOfMonths; i++) {
+//     currentProduction += Math.floor(currentProduction * (percent / 100));
+//     goals.push(currentProduction);
+//     console.log(goals);
+//   }
+//   return goals;
+// }
+// getPlan(10, 4, 30);
