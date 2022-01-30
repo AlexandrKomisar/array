@@ -16,10 +16,8 @@
 // })
 
 // gameUHD.forEach (person => console.log (person))
-
 // const newGameUHD = gameUHD.map(person => `${person.name} (${person.video})`)
 // console.log(newGameUHD);
-
 // console.log(gameUHD);
 // const filtArr = []
 // for (let i = 0; i < gameUHD.length; i++){
@@ -28,10 +26,8 @@
 //     }
 // }
 // console.log(filtArr);
-
 // let resultOne = gameUHD.find(item => item.name === 'Far Cry 6')
 // console.log(resultOne)
-
 // var arr = [3,2,5,6];
 // function arraySum(array){
 // var sum = 0;
@@ -41,7 +37,6 @@
 // console.log(sum);
 // }
 // arraySum(arr);
-
 // const arr = [5, 8, 7];
 // function getSum(array) {
 //     let sum = 0;
@@ -198,3 +193,45 @@
 //   return goals;
 // }
 // getPlan(10, 4, 30);
+
+// 7
+// Перша партія роботів готова, тепер їх треба перевірити. Всі роботи унікальні, тому в кожного своя швидкість руху. Треба визначити найнижчу, найвищу та середню швидкість наших роботів.
+// Наш сервер приймає масив швидкостей роботів testResults, пропускає його через функцію getSpeedStatistic і повертає статистику у вигляді масиву, де
+// перший елемент - це мінімальна швидкість
+// другий - максимальна
+// третій - середнє значення всіх швидкостей з testResults, округлене вниз (використай Math.floor(result))
+// Приклади:
+// getSpeedStatistic([10, 10, 11, 9, 12, 8]) === [8, 12, 10]
+// getSpeedStatistic([10]) === [10, 10, 10]
+// getSpeedStatistic([]) === [0, 0, 0]
+// getSpeedStatistic([8, 9, 3, 12]) === [3, 12, 8]
+// getSpeedStatistic([5]) === [5, 5, 5]
+function getSpeedStatistic(testResults) {
+  let result = [];
+  let big = 0;
+  let small = 0;
+  for (let i = 0; i < testResults.length; i++) {
+    console.log(testResults[i]);
+    if (big < testResults[i]) {
+      big = testResults[i];
+    }
+    if (small > testResults[i]) {
+      small = testResults[i];
+    }
+  }
+  let center = (big + small) / 2;
+  for (let i = 0; i < testResults.length; i++) {
+    if (10 == testResults[i]) {
+    }
+  }
+  result.push(small);
+  result.push(big);
+  result.push(center);
+
+  console.log("small - " + small);
+  console.log("big - " + big);
+  console.log("center - " + center);
+  console.log(result);
+  return result;
+}
+getSpeedStatistic([5]);
