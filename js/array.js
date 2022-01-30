@@ -128,7 +128,16 @@
 // isSorted([]) === true
 // isSorted([0, 3, 1, 2, 2, 2]) === false
 // isSorted([1, 11, 2]) === false
-function isSorted(boxNumbers) {
-  // write code here
-}
-isSorted([0, 3, 1, 2, 2, 2]);
+// function isSorted(boxNumbers) {
+//   let arr = [];
+//   for (let i = 0; i < boxNumbers.length; i++) {
+//     if (boxNumbers[i] > boxNumbers[i + 1]) {
+//       console.log(false);
+//       return false;
+//     }
+//   }
+//   console.log(true);
+
+//   return true;
+// }
+// isSorted([0, 1, 1, 1, 2]);
