@@ -137,7 +137,44 @@
 //     }
 //   }
 //   console.log(true);
-
 //   return true;
 // }
 // isSorted([0, 1, 1, 1, 2]);
+
+// 5
+// Наш робот вміє перетворювати команди руху на правильний сигнал і рухатися відповідно до нього:
+// 'forward' означає y + 1
+// 'back' означає y - 1
+// 'right' означає x + 1
+// 'left' означає x - 1
+// Було б чудово, якби робот знав, де він зараз знаходится навіть без GPS.
+// Напиши функцію getLocation, яка приймає масив початкових координат coordinates (у вигляді [x, y]) та массив історії команд commands.
+// Функція повинна повертати масив кінцевих координат робота в тому ж форматі ([x, y]) після рухів відповідно до команд з commands.
+// Наприклад:
+// coordinates = [2, 1]
+// commands = ['left', 'back', 'back']
+// Координати після першої команди: [1, 1] // 1 крок вліво
+// Координати після другої команди: [1, 0] // 1 крок назад
+// Координати після третьої команди: [1, -1] // 1 крок назад
+// Результатом буде [1, -1]
+// function getLocation(coordinates, commands) {
+//   let result = coordinates;
+//   for (let i = 0; i < commands.length; i++) {
+//     console.log(commands[i]);
+//     if (commands[i] == "left") {
+//       result[0] -= 1;
+//     }
+//     if (commands[i] == "right") {
+//       result[0] += 1;
+//     }
+//     if (commands[i] == "back") {
+//       result[1] -= 1;
+//     }
+//     if (commands[i] == "forward") {
+//       result[1] += 1;
+//     }
+//   }
+//   console.log(result);
+//   return result;
+// }
+// getLocation([0, 5], ["back", "back", "back", "right", "left", "forward"]);
