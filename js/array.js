@@ -207,26 +207,34 @@
 // getSpeedStatistic([8, 9, 3, 12]) === [3, 12, 8]
 // getSpeedStatistic([5]) === [5, 5, 5]
 function getSpeedStatistic(testResults) {
+  console.log(testResults[0]);
+
   let result = [];
-  let big = 0;
-  let small = 0;
+  let big = testResults[0];
+  let small = testResults[0];
+  let center = 0;
+
   for (let i = 0; i < testResults.length; i++) {
-    console.log(testResults[i]);
     if (big < testResults[i]) {
       big = testResults[i];
     }
     if (small > testResults[i]) {
       small = testResults[i];
     }
+    center += testResults[i];
   }
-  let center = (big + small) / 2;
-  for (let i = 0; i < testResults.length; i++) {
-    if (10 == testResults[i]) {
-    }
+  center = center / testResults.length;
+  if (testResults[0] == undefined) {
+    big = 0;
+    small = 0;
+    center = 0;
+  } else {
+    console.log("no empty");
   }
+
   result.push(small);
   result.push(big);
-  result.push(center);
+  result.push(Math.floor(center));
 
   console.log("small - " + small);
   console.log("big - " + big);
@@ -234,4 +242,4 @@ function getSpeedStatistic(testResults) {
   console.log(result);
   return result;
 }
-getSpeedStatistic([5]);
+getSpeedStatistic([]);
