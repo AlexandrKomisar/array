@@ -206,40 +206,45 @@
 // getSpeedStatistic([]) === [0, 0, 0]
 // getSpeedStatistic([8, 9, 3, 12]) === [3, 12, 8]
 // getSpeedStatistic([5]) === [5, 5, 5]
-function getSpeedStatistic(testResults) {
-  console.log(testResults[0]);
+// function getSpeedStatistic(testResults) {
+//   console.log(testResults[0]);
+//   let result = [];
+//   let big = testResults[0];
+//   let small = testResults[0];
+//   let center = 0;
+//   for (let i = 0; i < testResults.length; i++) {
+//     if (big < testResults[i]) {
+//       big = testResults[i];
+//     }
+//     if (small > testResults[i]) {
+//       small = testResults[i];
+//     }
+//     center += testResults[i];
+//   }
+//   center = center / testResults.length;
+//   if (testResults[0] == undefined) {
+//     big = 0;
+//     small = 0;
+//     center = 0;
+//   } else {
+//     console.log("no empty");
+//   }
+//   result.push(small);
+//   result.push(big);
+//   result.push(Math.floor(center));
+//   console.log("small - " + small);
+//   console.log("big - " + big);
+//   console.log("center - " + center);
+//   console.log(result);
+//   return result;
+// }
+// getSpeedStatistic([]);
 
-  let result = [];
-  let big = testResults[0];
-  let small = testResults[0];
-  let center = 0;
-
-  for (let i = 0; i < testResults.length; i++) {
-    if (big < testResults[i]) {
-      big = testResults[i];
-    }
-    if (small > testResults[i]) {
-      small = testResults[i];
-    }
-    center += testResults[i];
-  }
-  center = center / testResults.length;
-  if (testResults[0] == undefined) {
-    big = 0;
-    small = 0;
-    center = 0;
-  } else {
-    console.log("no empty");
-  }
-
-  result.push(small);
-  result.push(big);
-  result.push(Math.floor(center));
-
-  console.log("small - " + small);
-  console.log("big - " + big);
-  console.log("center - " + center);
-  console.log(result);
-  return result;
-}
-getSpeedStatistic([]);
+// 8
+// Роботи протестовані. Повільні роботи відправлені на апгрейд. Mate Post хоче купити у нас десяток роботів для доставки вантажів по місту. Для цього їм потрібні роботи, які будуть переносити за день найбільшу сумарну вагу.
+// Давай напишемо функцію compareRobots, яка приймає 2 масиви. Перший масив firstRobotResults містить вагу кожного вантажу, який перевіз за добу перший робот, другий secondRobotResults - відповідно вага вантажів другого робота.
+// Перевір, хто з роботів перевіз більшу вагу за день, та поверни рядок з рекомендацією, кого з роботів варто купити (див. приклади).
+// Приклади:
+// compareRobots([12, 4, 13], [1, 1, 4, 5, 12]) === 'First robot for sale!' // 29 > 23
+// compareRobots([9, 7, 9], [1, 3, 4, 5, 12]) === 'Both robots for sale!' // 25 = 25
+// compareRobots([1, 3, 4], [1, 1, 4, 5]) === 'Second robot for sale!' // 8 < 11
