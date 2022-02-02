@@ -248,3 +248,7 @@
 // compareRobots([12, 4, 13], [1, 1, 4, 5, 12]) === 'First robot for sale!' // 29 > 23
 // compareRobots([9, 7, 9], [1, 3, 4, 5, 12]) === 'Both robots for sale!' // 25 = 25
 // compareRobots([1, 3, 4], [1, 1, 4, 5]) === 'Second robot for sale!' // 8 < 11
+function compareRobots(firstRobotResults, secondRobotResults) {
+  // write code here
+}
+compareRobots([1, 3, 4], [1, 1, 4, 5]);
