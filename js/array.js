@@ -249,6 +249,27 @@
 // compareRobots([9, 7, 9], [1, 3, 4, 5, 12]) === 'Both robots for sale!' // 25 = 25
 // compareRobots([1, 3, 4], [1, 1, 4, 5]) === 'Second robot for sale!' // 8 < 11
 function compareRobots(firstRobotResults, secondRobotResults) {
-  // write code here
+  let sum1 = 0;
+  let sum2 = 0;
+  let str = "";
+  for (let i = 0; i < firstRobotResults.length; i++) {
+    sum1 += firstRobotResults[i];
+    console.log("sum1 - " + sum1);
+  }
+  for (let i = 0; i < secondRobotResults.length; i++) {
+    sum2 += secondRobotResults[i];
+    console.log("sum2 - " + sum2);
+  }
+  if (sum1 > sum2) {
+    str = "First robot for sale!";
+  }
+  if (sum1 == sum2) {
+    str = "Both robots for sale!";
+  }
+  if (sum1 < sum2) {
+    str = "Second robot for sale!";
+  }
+  console.log(str);
+  return str;
 }
-compareRobots([1, 3, 4], [1, 1, 4, 5]);
+compareRobots([12, 3, 13], [1, 1, 4, 5, 12]);
