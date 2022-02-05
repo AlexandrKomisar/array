@@ -275,27 +275,25 @@
 // compareRobots([12, 3, 13], [1, 1, 4, 5, 12]);
 
 // 9
-function checkNumber(number) {
-  let n = number;
-  let result = [];
-  if (n <= 1) {
-    result.push(false);
-  } else {
-    result.push(true);
-  }
-  if (n % 2 == 0) {
-    result.push(true);
-  } else {
-    result.push(false);
-  }
-  if (n % 10 == 0) {
-    result.push(true);
-  } else {
-    result.push(false);
-  }
-
-  console.log(result);
-  return result;
-}
-
-checkNumber(0);
+// function checkNumber(number) {
+//   let n = number;
+//   let result = [];
+//   if (n <= 1) {
+//     result.push(false);
+//   } else {
+//     result.push(true);
+//   }
+//   if (n % 2 == 0) {
+//     result.push(true);
+//   } else {
+//     result.push(false);
+//   }
+//   if (n % 10 == 0) {
+//     result.push(true);
+//   } else {
+//     result.push(false);
+//   }
+//   console.log(result);
+//   return result;
+// }
+// checkNumber(0);
