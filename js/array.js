@@ -311,3 +311,17 @@
 //   return sum;
 // }
 // getArraysSum([45, 4, 7, 7], [4, 77, 33, 83]);
+
+//11
+function combineArrays(first, second) {
+  let sumArr = [];
+  for (let i = 0; i < first.length, i < second.length; i++) {
+    let sum = second[i] + first[i];
+    console.log(sum);
+    sumArr.push(sum);
+    sum = 0;
+  }
+  console.log(sumArr);
+  return sumArr;
+}
+combineArrays([56, 23, 41, 34], [1, 1, 1, 1]);
