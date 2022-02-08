@@ -297,3 +297,17 @@
 //   return result;
 // }
 // checkNumber(0);
+
+// 10
+// function getArraysSum(arr1, arr2) {
+//   let sum = 0;
+//   for (let i = 0; i < arr1.length; i++) {
+//     sum += arr1[i];
+//   }
+//   for (let i = 0; i < arr2.length; i++) {
+//     sum += arr2[i];
+//   }
+//   console.log(sum);
+//   return sum;
+// }
+// getArraysSum([45, 4, 7, 7], [4, 77, 33, 83]);
